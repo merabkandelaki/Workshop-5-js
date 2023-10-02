@@ -1,0 +1,305 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* top header */
+.top_header {
+    padding: 15px 35px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_header_left {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.top_header_right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.langs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu_list_item {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    transition: .6s;
+}
+
+.menu_list_item:hover {
+    color: blue;
+    transform: scale(1.0);
+}
+
+.lang {
+    width: 12px;
+    height: 9px;
+}
+
+.chevron_down {
+    width: 12px;
+    height: 12px;
+}
+
+.top_header_title {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+}
+
+svg path {
+    fill: blue;
+}
+
+/* down header */
+.down_header {
+    padding: 18px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.down_header_left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.down_header_left_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.down_header_title {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup {
+    padding: 15px 40px;
+    background-color: blue;
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    padding: 15px 40px 15px 60px;
+    border: 1px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: #fff;
+    background-image: url(../icons/login-icon.png);
+    background-repeat: no-repeat;
+    background-position: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.open_burger {
+    display: none;
+}
+
+.open_burger img {
+    width: 18px;
+    height: 18px;
+}
+
+/* burger menu */
+.burger {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    background-image: url(../image/mob-menu-bg.png);
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    height: 100dvh;
+    background-size: cover;
+    transition: ease-out .5s all;
+    transform: translateY(-100%);
+}
+
+.burger.active {
+    transform: translateY(0);
+}
+
+.burger_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close_burger {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.open_burger {
+    cursor: pointer;
+
+}
+
+.burger_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.burger_langs {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.burger_lang_item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.burger_sign, .burger_nav_list_item, .burger_lang {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+/* to do list */
+.to_do_list {
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.new_task {
+    padding: 30px 20px;
+}
+
+.new_task input {
+    width: 75%;
+    height: 45px;
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.new_task input:focus {
+    outline: none;
+    border-color: #0d75ec;
+}
+
+.push {
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: blue;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.task {
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+
+.taskname {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.delete {
+    background-color: #0a2ea4;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}

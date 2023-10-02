@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Workshop 5</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- top header -->
+      <div class="container">
+        <div class="wrapper">
+          <div class="top_header">
+            <div class="top_header_left">
+              <img src="./icons/home-icon.png" alt="home icon" />
+              <nav class="menu">
+                <ul class="menu_list">
+                  <a href="#"><li class="menu_list_item">სიახლეები</li></a>
+                  <a href="#"><li class="menu_list_item">კითხვები</li></a>
+                  <a href="#"><li class="menu_list_item">ჩვენს შესახებ</li></a>
+                  <a href="#"><li class="menu_list_item">კონტაქტი</li></a>
+                </ul>
+              </nav>
+            </div>
+            <div class="top_header_right">
+              <div class="phone">
+                <span class="top_header_title">ცხელი ხაზი</span>
+                <span class="top_header_title">(032) 2 444 888</span>
+              </div>
+              <a href="#" class="langs">
+                <img class="lang" src="./icons/ge.svg" alt="lang ge icon " />
+                <span class="top_header_title">ქართული (GE)</span>
+                <svg
+                  class="chevron_down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- down header -->
+          <div class="down_header">
+            <div class="down_header_left">
+              <a href="#"><img src="./icons/logo.png" alt="logo" /></a>
+              <a href="#" class="down_header_left_item">
+                <img src="./icons/shop-icon.png" alt="shop icon" />
+                <span class="down_header_title">შოპინგი</span>
+              </a>
+              <a href="#" class="down_header_left_item">
+                <img src="./icons/service-icon.png" alt="service icon" />
+                <span class="down_header_title">სერვისები</span>
+              </a>
+              <a href="#" class="down_header_left_item">
+                <img src="./icons/price-icon.png" alt="price icon" />
+                <span class="down_header_title">ფასები</span>
+              </a>
+              <a href="#" class="down_header_left_item">
+                <img src="./icons/calcul-icon.png" alt="calcul icon" />
+                <span class="down_header_title">გამომთვლელი</span>
+              </a>
+            </div>
+            <div class="down_header_right">
+              <form action="#" class="registration">
+                <input
+                  type="button"
+                  name="sign"
+                  value="რეგისტრაცია"
+                  class="signup"
+                />
+                <input
+                  type="button"
+                  name="login"
+                  value="შესვლა"
+                  class="login"
+                />
+              </form>
+              <div class="open_burger">
+                <img src="./icons/burger-open.svg" alt="open burger" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- burger menu -->
+    <div class="burger">
+      <div class="burger_header">
+        <img src="./icons/mob-menu-logo.png" class="logo_burger" alt="logo" />
+        <img
+          src="./icons/mob-menu-close.png"
+          class="close_burger"
+          alt="close burger"
+        />
+      </div>
+      <a href="#" class="burger_sign">შესვლა</a>
+      <nav class="burger_nav">
+        <ul class="burger_nav_list">
+          <a href="#"><li class="burger_nav_list_item">მთავარი</li></a>
+          <a href="#"><li class="burger_nav_list_item">შოპინგი</li></a>
+          <a href="#"><li class="burger_nav_list_item">სერვისები</li></a>
+          <a href="#"><li class="burger_nav_list_item">ფასები</li></a>
+          <a href="#"><li class="burger_nav_list_item">სიახლეები</li></a>
+          <a href="#"><li class="burger_nav_list_item">კითხვები</li></a>
+          <a href="#"><li class="burger_nav_list_item">ჩვენ შესახებ</li></a>
+          <a href="#"><li class="burger_nav_list_item">კონტაქტი</li></a>
+        </ul>
+      </nav>
+      <div class="burger_langs">
+        <a href="#" class="burger_lang_item">
+          <span class="burger_lang">ENGLISH (EN)</span>
+          <img src="./icons/en.svg" class="lang" alt="lang en icon" />
+        </a>
+        <a href="#" class="burger_lang_item">
+          <span class="burger_lang">РУССКИЙ (RU)</span>
+          <img src="./icons/ru.svg" class="lang" alt="lang en icon" />
+        </a>
+        <a href="#" class="burger_lang_item">
+          <span class="burger_lang">ქართული (GE)</span>
+          <img src="./icons/ge.svg" class="lang" alt="lang en icon" />
+        </a>
+      </div>
+    </div>
+    <!-- to do list -->
+    <main>
+      <section class="to_do_list">
+        <h1>To do list</h1>
+        <form action="#" class="new_task">
+          <input type="text" placeholder="შეიყვანეთ დავალება..." />
+          <button class="push">დაამატე</button>
+        </form>
+        <div class="tasks"></div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
